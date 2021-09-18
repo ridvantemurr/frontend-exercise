@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alıştırmalar</Title>
+    <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+    <div style="width: 377px;margin: 25px">
+
+        <div class="component--search component--container">
+            <form action="">
+                <div class="search-icon">
+                    <img src="img/search.svg" alt="">
+                </div>
+                <input type="text" placeholder="Start typing to search">
+            </form>
+            <h6>Popular Searches</h6>
+            <ul>
+                <li>
+                    <a href="#">Air Transport</a>
+                </li>
+                <li>
+                    <a href="#">Aviation</a>
+                </li>
+                <li class="active">
+                    <a href="#">Mekaniske Versket</a>
+                </li>
+                <li>
+                    <a href="#">Port Authority</a>
+                </li>
+                <li>
+                    <a href="#">Sporvei</a>
+
+                </li>
+                <li>
+                    <a href="#">Bergens Kreditbank</a>
+                </li>
+            </ul>
+
+        </div>
+        <div style="width: 656px;margin-top: 15px;">
+            <div class="component--filter-search">
+                <form action="">
+                    <div class="search-icon">
+                        <img src="img/search.svg" alt="">
+                    </div>
+                    <input type="text" placeholder="Start typing to search">
+
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" checked name="type">
+                                <span class="text">Projects</span>
+
+
+                            </label>
+
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="type">
+                                <span class="text">Images</span>
+
+
+                            </label>
+
+                        </li>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="type">
+                                <span class="text">People</span>
+
+
+                            </label>
+
+                        </li>
+
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div class="component--filter">
+            <form action="">
+                <ul>
+
+                    <li>
+                        <div class="key">Country</div>
+                        <div class="value">
+                            <label class="selectbox">
+                                <img src="img/arrow-down.svg" alt="">
+                                <select name="" id="">
+                                    <option value="">Norway </option>
+                                    <option value="">Turkey</option>
+
+
+                                </select>
+                            </label>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="key">City</div>
+                        <div class="value">
+                            <input type="text" value="Bergen">
+                        </div>
+                    </li>
+                    <li class="filter-button">
+                        <a href="#">
+                            Cancel
+                        </a>
+                        <button type="submit">Apply Filters</button>
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+        <script src="js/app.min.js"></script>
+
+</body>
+
+</html>
