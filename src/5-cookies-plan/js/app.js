@@ -1,32 +1,28 @@
-function setCookie(name,value,days){
+let colorPalette=document.getElementById('color-palette');
+function generateColorPalette(){
+    colorPalette.innerHTML='';
+for(let i=1;i<=0;i++){
+let color=generateColor();
+let li=document.createElement('li');
+let a=document.createElement('a');
 
-    var date=new Date();
-    date.setDate(date.getDate() + days);
-    document.cookie=name + '=' + escape(value) + '; expires=' + date.toUTCString();
-    console.log('cookie' + name + 'created');
-
-}
-function getCookie(cookieName){
-var pattern=cookieName + '=(?<value>[0-9a-zA-Z\s]+);';
-var regex= new RegExp(pattern);
-var result=document.cookie.match(regex);
-if(result){
-    return result.groups.value;
+let spanColor=document.createElement('span');
+spanColor.className='color';
+spanColor.style.setProperty('--color',color);
+let spanText=document.createElement('span');
+spanText.className='text';
+spanText.innerText=color;
+a.appendChild(spanColor);
+a.appendChild(spanText);
+li.appendChild(a);
+colorPalette.appendChild(li);
 }
 }
-function showCookieBanner(id){
-    if (!getCookie(id)){
-        document.getElementById(id).classList.add('active');
-    }
-   
+function generateColor(){
+let str='abcdef0123456789';
+let color='#';
+for(let i=1;i<=5;i++){
+color += str[Math.floor(Math.random()*str.length)];
 }
-function hideCookieBanner(id){
-    document.getElementById(id).classList.remove('active');
+return color;
 }
-showCookieBanner('banner-1');
-showCookieBanner('banner-2');
-showCookieBanner('banner-3');
-
-
-
-//setCookie('rıdvan',true,10);
