@@ -61,6 +61,8 @@ ul.color-palette {
           height: 329px;
           background: #fff;
           border-radius: 15px;
+          cursor: pointer;
+          transition: 450ms all;
 
           a {
                padding: 10px;
