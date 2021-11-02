@@ -16,3 +16,21 @@
      }
 }
 
+.component {
+     --blog-cards {
+          ul {
+               display: flex;
+
+               li {
+                    padding: 0 25px;
+                    width: calc(100% / 3);
+
+                    a {
+                         display: flex;
+                         flex-direction: column;
+                    }
+               }
+
+          }
+     }
+}
