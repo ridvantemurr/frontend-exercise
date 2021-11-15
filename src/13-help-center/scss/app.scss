@@ -24,6 +24,10 @@ body {
 }
 
 .help-center {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 25px 0;
 
      h3 {
           font-size: 24px;
@@ -71,18 +75,93 @@ body {
      }
 
      .dropdown-container {
+          margin-bottom: 70px;
+
           li {
-               input {
-                    display: none;
+               margin-bottom: 25px;
+
+
+
+               &:last-child {
+                    margin-bottom: 0;
                }
 
                label {
                     display: flex;
                     justify-content: space-between;
+                    align-items: flex-start;
+                    padding-top: 5px;
                     height: 51px;
+                    border-bottom: 2px solid #DEE4F1;
+                    font-size: 18px;
+                    color: #202842;
+                    cursor: pointer;
+               }
 
+               .dropdown-content {
+                    max-height: 0;
+                    overflow: hidden;
+                    min-height: 0;
+                    transition: 400ms all;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: #202842;
+               }
+
+               input {
+                    display: none;
+
+                    &:checked+label+.dropdown-content {
+                         max-height: 50vh;
+                         padding: 15px 0;
+                    }
                }
           }
 
+     }
+
+     .help-articles {
+          width: 838px;
+
+          ul {
+               display: flex;
+               margin: 0 calc(-35px / 2);
+
+               li {
+                    margin: 0 calc(35px / 2);
+
+                    a {
+                         display: block;
+                         box-shadow: 0 9x 10px -4px rgba(#C9D6EF, .46);
+                         border-radius: 10px;
+                         background: #FFF;
+                         transition: 300ms all;
+
+                         img {
+                              width: 100%;
+                              border-radius: 10px 10px 0 0;
+                              display: block;
+                              height: 128px;
+                              object-fit: cover;
+
+                         }
+
+                         .title {
+                              display: block;
+                              padding: 15px;
+                              text-align: center;
+                              font-size: 14px;
+                              color: #202842;
+
+
+                         }
+
+                         &:hover {
+                              transform: scale(1.04);
+
+                         }
+                    }
+               }
+          }
      }
 }
