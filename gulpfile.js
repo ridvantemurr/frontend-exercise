@@ -7,7 +7,7 @@ const minifyJS = require("gulp-uglify");
 const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const del = require("del");
-const fileName="12-settings-popup";
+const fileName="13-help-center";
 
 //src/2-linkedin-redesign/**/
 gulp.task("browser-sync", () => {
