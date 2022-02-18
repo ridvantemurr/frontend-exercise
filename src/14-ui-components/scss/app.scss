@@ -18,5 +18,48 @@
 
 body {
      background: #F0F1F2;
+     padding: 50px;
+
+
+}
+.component{
+&--table{
+     padding: 40px 35px 55px;
+     background: #fff;
+     border-radius: 10px;
+     h3{
+          font-size: 22px;
+          font-weight: bold;
+          color: #16132F;
+          margin-bottom: 45px;
+     }
+     table{
+          width: 100%;
+          thead{
+          tr{
+               th{
+                    text-align: left;
+                    font-size: 16px;
+                    color: #9C9C9F;
+                    padding-bottom: 15px;
+                    border-bottom: 2px solid #EEEEEE;
+
+
+
+               }
+          }
+     }
+     tbody{
+          tr{
+               td{
+                    padding: 18px 0;
+                    border-bottom: 1px solid #EEEEEE;
+                    
+               }
+          }
+     }
+     }
+
+}
 
 }
